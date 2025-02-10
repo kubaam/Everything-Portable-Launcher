@@ -1,104 +1,105 @@
-# Everything Portable Launcher
+---
 
-A modular portable application launcher that allows you to install, reinstall, launch, reset, and uninstall multiple applications such as Epic Games Launcher, Minecraft Launcher, Steam Launcher, Telegram Launcher, and more—all from one unified script.
+# 🚀 **Everything Portable Launcher**  
 
-> **Note:** This project has been refactored and maintained by **Ambry**—building on initial work by MarioMasta64. Please consider that the functionality is provided "as is" without any warranty.
+A **modular, portable application launcher** that allows you to **install, reinstall, launch, reset, and uninstall** multiple applications—such as **Epic Games Launcher, Minecraft Launcher, Steam, Telegram, and more**—from a single unified script.
 
-## Features
+> **Maintainer:** **Ambry**  
+> Originally inspired by MarioMasta64. This project is provided **"as is"** without any warranty.
 
-- **Modular Architecture:**  
-  Separate menus and subroutines for each application make it easy to maintain and extend.
+---
 
-- **Reinstall / Install Option:**  
-  Each launcher menu includes a combined "Reinstall / Install" option that works for both initial installation and reinstallation.
+## 🔥 **Features**  
 
-- **Configurable Settings:**  
-  Use the `ini/settings.ini` file to configure default options (e.g., prompt behavior, user settings, etc.).
+✅ **Modular Architecture** – Easily maintain and extend functionality for different launchers.  
+✅ **Reinstall / Install Support** – Seamlessly install or reinstall applications from the same menu.  
+✅ **Configurable Settings** – Customize behavior via `ini/settings.ini`.  
+✅ **Utility Functions** – Built-in **PowerShell downloads** and **7-Zip extraction** for seamless installations.  
+✅ **System Architecture Detection** – Automatically configures settings for **32-bit or 64-bit** systems.  
+✅ **Extensible & Open-Source** – Designed to support **additional launchers** with minimal modifications.  
 
-- **Common Utility Functions:**  
-  Built-in routines for downloading files (via PowerShell) and extracting installers (using 7-Zip).
+---
 
-- **Architecture Detection:**  
-  Automatically detects the system architecture (32-bit or 64-bit) and adjusts settings accordingly.
-
-- **Extensible:**  
-  The modular design makes it straightforward to add new launcher routines.
-
-## Prerequisites
+## 🖥 **Prerequisites**  
 
 - **Windows Operating System**  
-- **PowerShell** (comes pre-installed on Windows)  
-- **7-Zip:**  
-  Ensure that 7-Zip is installed and its executable (`7z.exe`) is available on your system `PATH` (or placed in the project directory).
+- **PowerShell** (pre-installed on Windows)  
+- **7-Zip** (`7z.exe` must be in system `PATH` or inside the project directory)  
+- **Internet Connection** (for downloading installers & updates)  
 
-- **Internet Connection:**  
-  Required for downloading updates and application installers.
+---
 
-## Repository Structure
+## 📂 **Repository Structure**  
 
-- **README.md:**  
-  This file.
+```
+EverythingPortableLauncher/
+│── launcher.bat         # Main batch script providing the interactive menu
+│── ini/settings.ini     # Configuration file for user preferences
+│── bin/                 # Directory where installed binaries are stored
+│── extra/               # Directory for downloaded installer files
+│── helpers/             # Additional scripts for supporting functions
+│── doc/                 # Documentation & licensing information
+│── README.md            # This file
+```
 
-- **launcher.bat:**  
-  The main batch script that provides the interactive menu system and all subroutines.
+---
 
-- **ini/settings.ini:**  
-  Configuration file for default settings and other parameters.
+## ⚙ **Installation & Usage**  
 
-- **bin/:**  
-  Directory where application binaries are installed or launched from.
+### 1️⃣ **Clone the Repository**  
 
-- **extra/:**  
-  Directory used for storing downloaded installer files and temporary files.
+```bash  
+git clone https://github.com/yourusername/EverythingPortableLauncher.git  
+cd EverythingPortableLauncher  
+```
 
-- **helpers/:**  
-  Contains helper scripts (for example, for file downloads) used by the launcher.
+### 2️⃣ **(Optional) Configure Settings**  
 
-- **doc/:**  
-  Contains additional documentation and licensing information.
+Modify `ini/settings.ini` to adjust **default behaviors, paths, and user settings**.
 
-## Installation & Usage
+### 3️⃣ **Run the Launcher**  
 
-1. **Clone the Repository**
+Simply **double-click** `launcher.bat` or run it via Command Prompt:  
 
-   ```bash
-   git clone https://github.com/yourusername/EverythingPortableLauncher.git
-   cd EverythingPortableLauncher
-   ```
+```bash  
+launcher.bat  
+```
 
-2. **(Optional) Configure Settings**
+📜 **Main Menu Options:**  
+- **Epic Games Launcher**  
+- **Minecraft Launcher**  
+- **Steam Launcher**  
+- **Telegram Launcher**  
 
-   Edit the `ini/settings.ini` file to change default options (e.g., prompt behavior, username, etc.).
+🔧 **Available Actions for Each Application:**  
+✅ **Install / Reinstall** – Downloads and sets up the launcher.  
+✅ **Launch** – Starts the selected application.  
+✅ **Reset** – Clears user settings & cache.  
+✅ **Uninstall** – Removes the application from the system.  
 
-3. **Run the Launcher**
+---
 
-   Simply double-click the `launcher.bat` file (or run it from a command prompt) to open the main menu.  
-   From the main menu, choose the launcher you wish to work with:
-   - **Epic Games Launcher**
-   - **Minecraft Launcher**
-   - **Steam Launcher**
-   - **Telegram Launcher**
-   
-   Follow the on-screen instructions for installing, launching, resetting, or uninstalling the chosen application.
+## 🎉 **Contributing**  
 
-## Credits
+🔹 **Fork the repository**  
+🔹 **Create a feature branch** (`feature/your-feature`)  
+🔹 **Commit your changes**  
+🔹 **Submit a pull request**  
 
-- **Ambry:**  
-  Refactored, maintained, and enhanced this launcher script.
+💡 Contributions are welcome! Please ensure **code quality & documentation consistency**.  
 
-- **MarioMasta64:**  
-  Original inspiration and contributions to the portable launcher concepts.
+---
 
-Additional contributions from the community are welcome!
+## 📜 **License**  
 
-## License
+This project is licensed under the **MIT License**. See [`LICENSE`](LICENSE) for details.  
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+---
 
-## Contributing
+## ⚠️ **Disclaimer**  
 
-Contributions are welcome! Please fork the repository and submit a pull request with your improvements. Make sure to follow the existing coding style and include appropriate documentation for any changes.
+This software is provided **"as is"** without any warranty. **Ambry** and **MarioMasta64** (or any contributors) are **not responsible** for any issues or damages resulting from its use.  
 
-## Disclaimer
+Use at your own risk. 🚀  
 
-This launcher script is provided "as is" without warranty of any kind. Use it at your own risk. Neither Ambry nor MarioMasta64 (nor any contributors) shall be held liable for any issues or damages resulting from its use.
+---
